@@ -27,7 +27,7 @@ struct KeyboardAdaptive: ViewModifier {
 }
 
 extension View {
-    func keyboardAdaptive() -> some View {
+    public func keyboardAdaptive() -> some View {
         ModifiedContent(content: self, modifier: KeyboardAdaptive())
     }
 }
